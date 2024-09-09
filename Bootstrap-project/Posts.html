@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Site</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfJ" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <nav class = "navbar navbar-expand-lg bg-dark navbar-dark ">
+<div class = "container ">
+    <ul class="navbar-nav ms-auto">  
+    <a class="nav-link active" href="#">Blogen</a>
+    <a class="nav-link " href="#">Dashboard</a>
+    <a class="nav-link active" href="#">Posts</a>
+    <a class="nav-link " href="Catogries.html">Categories</a>
+    <a class="nav-link " href="Users.html">Users</a>
+</ul>
+<ul class="navbar-nav ms-auto">
+            
+         
+    <a class="nav-link active" href="#"> <i class = "bi bi-person-fill"> </i> Welcome Brad </a>
+    <a class="nav-link active" href="Blogen_Admin.html"> <i class =" bi bi-box-arrow-right">       </i>Logout</a>
+    
+    </ul>
+</div>
+    </nav>
+    <header class ="  bg-primary row-lg-3 text-white py-2 p-4  "id="Posts"  >
+        <div class= "container"> <h1 class="fa fa-pencil    "                style="font-size:40px;"  >
+            Posts
+        </h1></div>
+       
+    </header>
+<section class ="py-1 mb-3   "   >
+    <div class = "container">
+        <div class = "   d-flex flex-row-reverse   ">
+    <form class = "d-flex py-3" role ="search">
+<input class = "col-lg-9" type = "text " id ="searchInput" placeholder="Search">
+<button class ="btn btn-primary  " type="button"      id="searchBtn"            >Search</button>
+
+</input>
+    </form>
+</div>
+<form class = "d-flex py-0" role ="search">
+    
+    <button class ="btn btn-primary  " type="button" id="addPostBtn">Add posts +</button>
+    <button class ="btn btn-danger mx-2  " type="button">Delete posts x</button>
+    </input>
+        </form>
+
+
+</section>
+
+
+<section class ="mx-4">
+<div class="container ">
+<div class = "row bg-light p-3 " id="titles" data-exception="true ">
+    Latest posts
+</div>
+<div class = "row bg-dark text-light p-2   "  >
+    #
+    <div class = "col  mx-4  ">
+           Title
+    </div>
+    <div class = "col ">
+        Category  
+ </div>
+ <div class = "col   ">
+    Date
+</div>
+<div class = "col   ">
+</div>
+</div>
+<div class = "row  p-2 bg-light">
+    1
+    <div class = "col  mx-4  ">
+        Post One
+ </div>
+ <div class = "col   ">
+    Web dev
+</div>
+<div class = "col   ">
+    2018-10-5
+</div>
+<div class = "col bg-grey  ">
+    <button type="button" class="btn btn-secondary"  >>> Details</button>
+    </div>
+</div>
+<div class = "row my-custom-row-one  p-2">
+    2
+    <div class = "col  mx-4  ">
+        Post Two
+ </div>
+ <div class = "col   ">
+    Tech gadget
+</div>
+ <div class = "col   ">
+    2018-11-5
+</div>
+<div class = "col   ">
+    <button type="button" class="btn btn-secondary"  >>> Details</button>
+</div>
+</div>
+<div class = "row  p-2 bg-light">
+    3 <div class = "col  mx-4  ">
+        Post Three
+ </div>
+ <div class = "col   ">
+    Web dev
+ </div>
+ <div class = "col   ">
+   2018-12-5
+ </div>
+ <div class = "col   ">
+    <button type="button" class="btn btn-secondary"  >>> Details</button>
+ </div>
+</div>
+<div class = "row  p-2">
+    4 <div class = "col  mx-4  ">
+        Post Four
+ </div>
+ <div class = "col   ">
+Business
+</div>
+<div class = "col   ">
+2018-17-5
+    </div>
+    <div class = "col   ">
+        <button type="button" class="btn btn-secondary"  >>> Details</button>
+     </div>
+</div>
+<div class = "row  p-2 bg-light">
+    5
+    <div class = "col  mx-4  ">
+
+        Post Five
+ </div>
+ <div class = "col   ">
+
+    Web dev
+    </div>
+    <div class = "col   ">
+    2018-17-5
+        </div>
+        <div class = "col   ">
+
+            <button type="button" class="btn btn-secondary"  >>> Details</button>
+         </div>
+</div> 
+
+<div class = "row  p-2">
+    6
+    <div class = "col  mx-4  ">
+
+        Post Six
+
+
+ </div>
+ 
+ <div class = "col   ">
+   Health & wellness
+        </div>
+
+ <div class = "col   ">
+    2018-20-5
+        </div>
+
+
+
+
+
+ <div class = "col   ">
+
+    <button type="button" class="btn btn-secondary"  >>> Details</button>
+ </div>
+</div>
+
+</div>
+
+<ul class = "pagination mx-5">
+
+    <li class=" Page-item"><a class=" page-link" href="Users.html">Previous</a></li>
+    <li class=" Page-item"><a class=" page-link" href="Posts.html">1</a></li>
+    <li class=" Page-item"><a class=" page-link" href="Catogries.html">2</a></li>
+    <li class=" Page-item"><a class=" page-link" href="Users.html">3</a></li>
+    <li class=" Page-item"><a class=" page-link" href="Blogen_Admin.html">Login</a></li>
+    <li class=" Page-item"><a class=" page-link" href="Catogries.html">Next</a></li>
+    </ul>
+</section><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+ 
+
+
+$(document).ready(function() {
+
+
+$('#addPostBtn').click(function() {
+
+window.open( "AddPosts.html","_blank", "width=600, height=400")
+
+});
+
+});
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+<footer class ="bg-dark text-white text-center p-5 mt-5">
+
+    Copyright@RCC
+</footer>
+
+
+<script>
+
+    $(document).ready(function() {
+        $('#searchBtn').click(function() {
+            var searchText = $('#searchInput').val().toLowerCase();
+            $('.row').each(function(){
+    
+                var title = $(this).text().toLowerCase();
+                if  ( title.indexOf(searchText) === -1){
+                    $(this).hide();
+                   
+                } else {
+                    $(this).show() ;
+                   
+                }
+            });
+        });
+    });
+        
+        
+        
+        
+        </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
